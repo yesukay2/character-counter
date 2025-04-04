@@ -144,10 +144,14 @@ textarea::placeholder{
 
 .toggle-wrapper{
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  margin: 0%;
+  margin-top: 5px;
 }
+
+
 
 
 input[type="checkbox"] {
@@ -173,7 +177,13 @@ label{
 .read-time{
   font: var(--text-preset-4);
   letter-spacing: -0.6px;
-  margin-top: 100px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+  position: relative;
+  top: -1px; 
 }
 
 input[type="checkbox"]:checked{
@@ -182,21 +192,20 @@ input[type="checkbox"]:checked{
 }
 
 
-/* .toggle-container > div > label, .toggle-set > p{
-  font-weight: 300;
-} */
 
 .toggle-set{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 35px;
-  height: 3rem;
+  margin-top: 10px;
 }
 
+.toggle-set > p{
+  margin: 0%;
+}
 
 #letter-density{
   margin-bottom: var(--spacing-1000);
@@ -258,16 +267,25 @@ input[type="checkbox"]:checked{
 
   .heading h1{
     font: var(--text-preset-1-mobile);
-    width: 100vw;
+    letter-spacing: -1px;
+    width: 100% !important;
     line-height: 100%;
+  } 
+
+  .toggle-set{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
   }
 
-
-  .toggle-set, .toggle-container{
+  
+ .toggle-container{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 12px;
+    gap: 5px;
   }
 
 
@@ -316,7 +334,7 @@ input[type="checkbox"]:checked{
 
 
 
-@media (max-width: 770px ){
+@media (min-width: 769px ){
   :root{
     margin: 16px 32px;
   }

@@ -77,8 +77,7 @@
 
   @media screen and (max-width: 375px){
     .counter-card{
-        width: 343px;
-        display: hidden;
+        width: 100%;
     }
 
 

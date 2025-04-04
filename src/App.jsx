@@ -82,7 +82,7 @@ function App() {
       </div>
 
 
-      <p className='.read-time'>Approx. reading time: 0 minutes</p>
+      <p className='read-time'>Approx. reading time: 0 minutes</p>
 
     </div>
 
