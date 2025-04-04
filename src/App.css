@@ -335,11 +335,7 @@ input[type="checkbox"]:checked{
 
 
 @media (min-width: 769px ){
-  :root{
-    margin: 16px 32px;
-  }
-
   .heading h1{
-    width: 80%;
+    width: 35rem;
   }
 }

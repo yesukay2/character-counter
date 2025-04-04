@@ -54,10 +54,10 @@ function App() {
 
   return (
     <div className='screen'>
-      <div className='title-bar'>
+      <header className='title-bar'>
         <img src={logo} alt="logo"/>
-        <img src={lightMode ? lightThemeSelector : darkThemeSelector} alt='theme selector' id='themeSelector' onClick={changeTheme}/>
-      </div>
+        <img src={lightMode ? lightThemeSelector : darkThemeSelector} alt='theme selector' id='themeSelector' onClick={changeTheme} style={{backgroundColor: lightMode ? "#E4E4EF" : "white"}}/>
+      </header>
 
     
     <div className='heading'>
